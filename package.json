@@ -1,0 +1,16 @@
+{
+  "name": "req",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node examples/proxy.js",
+    "imagereq": "node examples/image.js",
+    "proxyget": "node examples/proxy.js",
+    "getreq": "node examples/get.js",
+    "postreq": "node examples/post.js"
+  },
+  "keywords": [],
+  "author": "Joey Malvinni",
+  "license": "ISC"
+}
