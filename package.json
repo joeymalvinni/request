@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node examples/proxy.js",
+    "start": "node examples/get.js",
     "imagereq": "node examples/image.js",
     "proxyget": "node examples/proxy.js",
     "getreq": "node examples/get.js",

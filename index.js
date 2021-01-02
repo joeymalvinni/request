@@ -52,8 +52,6 @@ function proxyget(url, headers, proxy) {
     if(headers) { headers = JSON.parse(validate_headers.addHeaders(JSON.stringify(headers))) }
     else headers = JSON.parse(validate_headers.addHeaders(headers))
 
-
-
     return {
         text: function() {
             return getProxy(url, headers, proxy).text()
