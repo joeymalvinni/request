@@ -2,7 +2,9 @@
 &nbsp;  
 # **Request**
 ### A Node.js Request module, built using Promises with 0 dependencies.
-&nbsp;  
+
+
+[![Known Vulnerabilities](https://snyk.io/test/github/joeymalvinni/request/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joeymalvinni/request?targetFile=package.json)
 
 ## **Usage** 
 ```js
