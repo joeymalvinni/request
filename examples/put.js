@@ -1,6 +1,6 @@
 const request = require('../index.js')
 
-request.post('https://postman-echo.com/post', {
+request.put('https://postman-echo.com/put', {
     data: JSON.stringify({
         user: 'request',
         password: 'requestx@node',

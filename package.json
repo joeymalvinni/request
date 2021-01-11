@@ -1,16 +1,12 @@
 {
-  "name": "req",
-  "version": "1.0.0",
+  "name": "request",
+  "version": "0.4.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node examples/proxypost.js",
-    "imagereq": "node examples/image.js",
-    "proxyget": "node examples/proxy.js",
-    "getreq": "node examples/get.js",
-    "postreq": "node examples/post.js"
+    "start": "node examples/head.js"
   },
-  "keywords": [],
+  "keywords": ["request-module", "request", "fetch", "get"],
   "author": "Joey Malvinni",
   "license": "ISC"
 }

@@ -1,11 +1,14 @@
 const request = require('../index.js')
 
-request.proxy('http://50.206.25.108:80').post('https://postman-echo.com/post', {
+request.proxy('http://212.237.63.84:8888').post('https://postman-echo.com/post', {
     data: JSON.stringify({
         user: 'request',
         password: 'requestx@node',
         email: 'requestx@npm.org'
-    })
+    }),
+    followRedirect: true,
+    maxRedirects: 10,
+    timeout: 10000
 }).text().then(console.log)
 
 /*
