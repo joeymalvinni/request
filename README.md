@@ -30,7 +30,7 @@ get()
 
 ## Functions
 &nbsp;  
-### **get**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.get(url, headers)`
+## **get** &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.get(url, headers)`
 
 Returns an object of functions that apply proccesing to the response. To get the raw response buffer, use `.buffer()`.  
 
@@ -64,7 +64,7 @@ console.log(request.get('https://postman-echo.com/get').error())
 ```  
 
 &nbsp;  
-### **post**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.post(url, headers)`
+## **post**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.post(url, headers)`
 
 Returns an object of functions that apply proccesing to the response. To get the raw response buffer, use `.buffer()`.  
 
@@ -122,7 +122,7 @@ console.log(request.post('https://postman-echo.com/post', {
 ```  
 
 &nbsp;  
-### **proxy**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.proxy(proxyUrl)`
+## **proxy**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`request.proxy(proxyUrl)`
 
 Proxies a request. Format the string like `protocol://proxyIp:proxyPort` (e.g. `http://127.0.0.1:3000`). Returns the type of request you want to make. Then, request the resource like normal.  
 
