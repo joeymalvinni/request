@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node examples/head.js"
+    "start": "node examples/get.js"
   },
   "keywords": ["request-module", "request", "fetch", "get"],
   "author": "Joey Malvinni",
