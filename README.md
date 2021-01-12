@@ -1,10 +1,9 @@
 #### ***Note:** At this time, the module is not named, therefore, the name `request` is used to represent this module.
-&nbsp;  
 # **Request**
-### A Node.js Request module, built using Promises with 0 dependencies.
-
-
-[![Known Vulnerabilities](https://snyk.io/test/github/joeymalvinni/request/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joeymalvinni/request?targetFile=package.json)
+### Super Simplified HTTP client for Node.js.
+&nbsp;  
+&nbsp;  
+[![Build Status](https://travis-ci.com/joeymalvinni/request.svg?branch=main)](https://travis-ci.com/joeymalvinni/request) [![Known Vulnerabilities](https://snyk.io/test/github/joeymalvinni/request/badge.svg?targetFile=package.json)](https://snyk.io/test/github/joeymalvinni/request?targetFile=package.json)
 
 ## **Usage** 
 ```js
