@@ -11,10 +11,6 @@
 &nbsp;  
 &nbsp;  
 
----
-&nbsp;  
-&nbsp;  
-
 
 # Table of Contents
 
@@ -26,6 +22,8 @@
     - [Put](#put-requestputurl-headers)
     - [Proxy](#proxy-requestproxyproxyUrl)
 
+&nbsp;  
+&nbsp;  
 ---
 &nbsp;  
 
