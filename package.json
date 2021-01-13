@@ -1,21 +1,21 @@
 
 {
   "name": "request",
-  "description": "Simplified HTTP request client.",
+  "description": "☁️🌐 Easy and Powerful HTTP Requests— Simplified",
   "keywords": [
     "http",
     "simple",
     "util",
     "utility"
   ],
-  "version": "0.2-beta",
+  "version": "0.3.0",
   "author": "Joseph Malvinni",
   "repository": {
     "type": "git",
     "url": "https://github.com/joeymalvinni/request.git"
   },
   "bugs": {
-    "url": "http://github.com/request/request/issues"
+    "url": "http://github.com/joeymalvinni/request/issues"
   },
   "license": "MIT",
   "engines": {
@@ -28,7 +28,7 @@
     "src/"
   ],
   "scripts": {
-    "start": "node index.js",
+    "start": "node examples/get.js",
     "test": "node index.js"
   }
 }

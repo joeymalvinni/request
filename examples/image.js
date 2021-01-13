@@ -1,7 +1,7 @@
 const fs = require('fs')
 const request = require('../index.js')
 
-request.get('https://i.pinimg.com/originals/4f/82/8d/4f828d05f82b8b7aedfe8be6a7d9d2a3.png').buffer().then(buffer=>{
+request.get('https://res.cloudinary.com/practicaldev/image/fetch/s--ij_hqKUb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://github.com/damiancipolat/js_vs_memes/blob/master/doc/mind_js.jpg%3Fraw%3Dtrue').buffer().then(buffer=>{
     try {
         fs.writeFileSync("examples/meme.jpg", buffer);
         console.log('Successfully saved meme!')
