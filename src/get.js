@@ -8,6 +8,7 @@ function get(url, headers) {
     validate_request( url, JSON.stringify(headers) )
     if(headers) { headers = JSON.parse(validate_headers.addHeaders(JSON.stringify(headers))) }
     else headers = JSON.parse(validate_headers.addHeaders(headers))
+
     return {
         text: function() {
             return getReq(url, headers).text()

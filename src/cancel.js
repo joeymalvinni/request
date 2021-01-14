@@ -1,17 +1,24 @@
-const fs = require('fs')
+var isCancelled = false
 
-let readValue = ()=>{
-    return fs.readFileSync('src/cancel.txt','utf8') === 'true' ? true : false;
-}
+let cancelledState = function(){
+ return isCancelled;
+};
 
-let cancelled = readValue()
+let setCancelledState = function(_isCancelled){
+    isCancelled = _isCancelled
+};
 
-let cancel = ()=> {
-    let c = !cancelled
-    fs.writeFileSync('src/cancel.txt', c.toString())
+let toggleCancelledState = function(){
+    isCancelled = !isCancelled
+};
+
+let resetCancelledState = function(){
+    isCancelled = false
 }
 
 module.exports = {
-    cancel,
-    cancelled
+   cancelledState,
+   setCancelledState,
+   resetCancelledState,
+   toggleCancelledState
 }

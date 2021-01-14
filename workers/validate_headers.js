@@ -1,3 +1,5 @@
+const { getDefaults } = require('../src/defaults.js')
+
 function validate_headers( headers ){
     if(headers !== undefined) headers = JSON.parse(headers)
     if(typeof headers !== 'object' && headers !== undefined) throw new Error('Invalid headers, headers must be an object.')
@@ -8,15 +10,10 @@ function validate_headers( headers ){
 function addHeaders( headers ){
     if(headers !== undefined){
         headers = JSON.parse(headers)
-        if(!headers.headers) headers.headers = {}
-        if(!headers.headers['user-agent']) headers.headers['user-agent'] = 'requestxjs 1.0.2'
-        if(!headers.headers['accept']) headers.headers['accept'] = '\*\/*'
+        let _headers = getDefaults()
+        headers = {...headers, ..._headers}
     } else {
-        headers = {
-            headers: {}
-        }
-        headers.headers['user-agent'] = 'requestxjs 1.0.2'
-        headers.headers['accept'] = '*\/*'
+        headers = getDefaults()
     }
     return JSON.stringify(headers)
 }

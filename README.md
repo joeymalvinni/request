@@ -1,6 +1,6 @@
 #### ***Note:** At this time, the module is not named, therefore, the name `request` is used to represent this module.
 # **Request**
-### Super Simplified HTTP client for Node.js.
+> ☁️🌐 Easy and Powerful HTTP Requests— Simplified
 
 
 [![Build Status](https://travis-ci.com/joeymalvinni/request.svg?branch=main)](https://travis-ci.com/joeymalvinni/request)
@@ -23,8 +23,6 @@
     - [Proxy](#proxy-requestproxyproxyUrl)
     
 
-&nbsp;  
-&nbsp;  
 ---
 &nbsp;  
 

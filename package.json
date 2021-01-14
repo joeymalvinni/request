@@ -6,9 +6,20 @@
     "http",
     "simple",
     "util",
-    "utility"
+    "utility",
+    "fetch",
+    "request",
+    "get-request",
+    "request module",
+    "node-fetch",
+    "got", 
+    "get", 
+    "post", 
+    "http client",
+    "http-client",
+    "request-client"
   ],
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "Joseph Malvinni",
   "repository": {
     "type": "git",
@@ -28,7 +39,7 @@
     "src/"
   ],
   "scripts": {
-    "start": "node examples/get.js",
+    "start": "node examples/cancelRequest.js",
     "test": "node index.js"
   }
 }

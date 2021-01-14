@@ -1,7 +1,9 @@
-// makes a simple get request to log your ip address.
+// Makes a simple get request to the request testing server.
+// If you do not have the server and would like to follow these examples, clone this repository:
+// 
 
 const request = require('../index');
 
-request.get('http://ip.jsontest.com/?callback=showMyIP').text().then(console.log)
+request.get('http://localhost:80/').text().then(console.log)
 
-//=> showMyIP({"ip": "127.0.0.1"});
+//=> Example response for a get request.

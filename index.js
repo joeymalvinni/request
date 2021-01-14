@@ -19,9 +19,14 @@ const patch = require('./src/patch.js')
 // proxy requests
 const proxy = require('./src/proxy.js')
 
-// cancel requests - beta
-const { cancel } = require('./src/cancel.js')
+// cancel requests
+const cancel = require('./src/cancel.js').toggleCancelledState
 
+// set default request options
+const defaults = require('./src/defaults.js').setDefaults
+
+// reset default request options
+const reset = require('./src/defaults.js').resetDefaults
 
 // export main functions in an object
 module.exports = {
@@ -32,5 +37,7 @@ module.exports = {
     delete: deletereq,
     patch,
     proxy,
-    cancel
+    cancel,
+    defaults,
+    reset
 }
