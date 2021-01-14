@@ -1,4 +1,4 @@
-const { getDefaults } = require('../src/defaults.js')
+const { getDefaults } = require('../src/misc/defaults.js')
 
 function validate_headers( headers ){
     if(headers !== undefined) headers = JSON.parse(headers)

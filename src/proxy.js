@@ -1,5 +1,5 @@
-const proxyget = require('./proxyGet.js')
-const proxypost = require('./proxyPost')
+const proxyget = require('./proxy/proxyGet.js')
+const proxypost = require('./proxy/proxyPost')
 
 // main proxy function
 function proxy(proxyurl){

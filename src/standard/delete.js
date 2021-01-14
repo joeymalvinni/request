@@ -1,7 +1,7 @@
-const deleteReq = require('../lib/delete.js')
+const deleteReq = require('../../lib/delete.js')
 // workers
-const validate_request = require('../workers/complete_validation.js')
-const validate_headers = require('../workers/validate_headers.js')
+const validate_request = require('../../workers/complete_validation.js')
+const validate_headers = require('../../workers/validate_headers.js')
 
 // standard post request
 function deleteRequest(url, headers) {

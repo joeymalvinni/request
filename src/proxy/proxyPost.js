@@ -1,7 +1,7 @@
-const postProxy = require('../lib/postproxy.js')
+const postProxy = require('../../lib/postproxy.js')
 // workers
-const validate_request = require('../workers/complete_validation.js')
-const validate_headers = require('../workers/validate_headers.js')
+const validate_request = require('../../workers/complete_validation.js')
+const validate_headers = require('../../workers/validate_headers.js')
 
 // proxy a post request
 function proxypost(url, headers, proxy) {

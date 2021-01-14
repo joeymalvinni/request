@@ -1,7 +1,7 @@
-const getReq = require('../lib/get.js')
+const getReq = require('../../lib/get.js')
 // workers
-const validate_request = require('../workers/complete_validation.js')
-const validate_headers = require('../workers/validate_headers.js')
+const validate_request = require('../../workers/complete_validation.js')
+const validate_headers = require('../../workers/validate_headers.js')
 
 // standard get request
 function get(url, headers) {
