@@ -1,9 +1,9 @@
-// makes a simple head request to NPM's website.
+// makes a simple head request to show the X-Powered-By response header.
 
 const request = require('../index');
 
-request.head('https://www.npmjs.com/').headers().then((res)=>{
-    console.log("NPM's status code: " + res.statusCode)
+request.head('http://localhost/').headers().then((res)=>{
+    console.log(res.headers['x-powered-by'])
 })
 
-//=> NPM's status code: 200
+//=> Request v0.4.0

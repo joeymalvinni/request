@@ -4,6 +4,9 @@
 
 const request = require('../index');
 
-request.get('http://localhost:80/').text().then(console.log)
+request.get('http://localhost:80/ip',{
+    followRedirect: true,
+    maxRedirects: 10
+}).text().then(console.log)
 
 //=> Example response for a get request.

@@ -1,4 +1,3 @@
-
 {
   "name": "request",
   "description": "☁️🌐 Easy and Powerful HTTP Requests— Simplified",
@@ -12,14 +11,14 @@
     "get-request",
     "request module",
     "node-fetch",
-    "got", 
-    "get", 
-    "post", 
+    "got",
+    "get",
+    "post",
     "http client",
     "http-client",
     "request-client"
   ],
-  "version": "0.4.0",
+  "version": "1.0.0",
   "author": "Joseph Malvinni",
   "repository": {
     "type": "git",
@@ -39,7 +38,10 @@
     "src/"
   ],
   "scripts": {
-    "start": "node examples/cancelRequest.js",
+    "start": "node examples/get.js",
     "test": "node index.js"
+  },
+  "dependencies": {
+    "socks-proxy-agent": "^5.0.0"
   }
 }

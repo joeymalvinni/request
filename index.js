@@ -1,43 +1,45 @@
 // request method get
-const get = require('./src/standard/get.js')
+const get = require('./lib/standard/get.js')
 
 // request method head
-const head = require('./src/standard/head.js')
+const head = require('./lib/standard/head.js')
 
 // request method post
-const post = require('./src/standard/post.js')
+const post = require('./lib/standard/post.js')
 
 // request method put
-const put = require('./src/standard/put.js')
+const put = require('./lib/standard/put.js')
 
 // request method delete
-const deletereq = require('./src/standard/delete.js')
+const deletereq = require('./lib/standard/delete.js')
 
 // request method patch
-const patch = require('./src/standard/patch.js')
+const patch = require('./lib/standard/patch.js')
 
 // proxy requests
-const proxy = require('./src/proxy.js')
+const proxy = require('./lib/proxy.js')
 
 // cancel requests
-const cancel = require('./src/misc/cancel.js').toggleCancelledState
+const cancel = require('./workers/cancel.js').toggleCancelledState
 
 // set default request options
-const defaults = require('./src/misc/defaults.js').setDefaults
+const defaults = require('./workers/defaults.js').setDefaults
 
 // reset default request options
-const reset = require('./src/misc/defaults.js').resetDefaults
+const reset = require('./workers/defaults.js').resetDefaults
 
 // export main functions in an object
-module.exports = {
-    get,
-    head,
-    post,
-    put,
-    delete: deletereq,
-    patch,
-    proxy,
-    cancel,
-    defaults,
-    reset
-}
+module.exports = Object.assign(
+    get, {
+        get,
+        head,
+        post,
+        put,
+        delete: deletereq,
+        patch,
+        proxy,
+        cancel,
+        defaults,
+        reset
+    }
+)
